@@ -14,17 +14,32 @@ body {
     background: var(--white-color-text);
     color: var(--second-color);
     font-size: 14px;
+    width: 1600px;
 }
 
 .list {
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
     /* навигация */
 .link {
     text-decoration: none;
 }
     /* лого */
+.header{
+    border-bottom: #ececec 1px solid;
+}
 .logo-head {
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
@@ -64,6 +79,8 @@ body {
 .section-main {
     background-color: var(--background-color);
     text-align: center;
+    width: inherit;
+    min-height: 600px;
 }
 .title-hero {
     color: var(--white-color-text);
@@ -71,6 +88,12 @@ body {
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
+    padding-top: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -85,11 +108,18 @@ body {
     line-height: 1.88;
     border: none;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-align: center;
 }
 .features {
     font-size: 14px;
     line-height: 1.71;
     color: var(--primery-text-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
 }
 .title-spec {
     color: var(--second-color);
@@ -100,6 +130,7 @@ body {
 }
 .team {
     background-color: var(--background-color-uniq);
+    width: inherit;
 }
 .section-title {
     color: var(--second-color);
@@ -107,6 +138,9 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
 }
 .team-list {
     font-size: 16px;
@@ -116,6 +150,7 @@ body {
     list-style: none;
     background-color: var(--background-color-uniq);
     color: var(--primery-text-color);
+    margin: 0;
 }
 .name {
     color: var(--second-color);
@@ -124,8 +159,13 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.position{
+    margin: 0;
+}
 .foot {
     background: var(--background-color);
+    min-height: 252px;
+    width: inherit;
 }
 .logo-foot {
     color: var(--accent-color);
@@ -134,20 +174,26 @@ body {
     letter-spacing: 0.03em;
     font-size: 26px;
     line-height: 1.19;
-
+    display: inline-block;
+    padding-top: 60px;
+    padding-bottom: 20px;    
 }
 .logo-foot-half {
     color: var(--white-color-text);
 }
 .location {
     color: var(--white-color-text);
+    margin: 0;
 }
 .location, 
 .foot-li {
+    display: inline-block;
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+
 }
 .foot-li {
     color: var(--footer-color-uniq);

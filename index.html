@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/styles.css">
     <title>WebStudio</title>
     
@@ -13,9 +14,9 @@
 
   <body>
     <!-- Шапка  -->
-    <header>
+    <header class="header">
       <!-- Нагивация -->
-      <nav>
+      <nav class="container">
         <a class="logo-head" href="./index.html">
           Web<span class="logo-head-half">Studio</span>
         </a>
@@ -27,7 +28,7 @@
       </nav>
 
       <!-- Контакты -->
-      <ul class="contacts-list list">
+      <ul class="contacts-list list container">
         <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
@@ -43,7 +44,7 @@
 
       <!-- Особенности -->
       <section>
-        <ul class="features list">
+        <ul class="features list container">
           <li>
             <h3 class="title-spec">Внимание к деталям</h3>
             <p>
@@ -65,14 +66,21 @@
             </p>
           
           </li>
+          <li>
+            <h3 class="title-spec">Современные технологии</h3>
+            <p>
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
+          
+          </li>
         </ul>
       </section>
 
       <!-- Примеры проектов -->
       <section>
-        <h2 class="section-title">Чем мы занимаемся</h2>
+        <h2 class="section-title container">Чем мы занимаемся</h2>
 
-        <ul class="list">
+        <ul class="list container">
           <li>
             <img src="./images/box-1.jpg" alt="Руки и ноут" width="370" />
           </li>
@@ -86,34 +94,34 @@
       </section>
 
       <!-- Команда -->
-      <section class="team">
+      <section class="container team">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list">
           <li>
             <img src="./images/photo-4.jpg" alt="Игорь Демьяненко" width="270" />
             <h3 class="name">Игорь Демьяненко</h3>
-            <p>
+            <p class="position">
               Product Designer
             </p>
           </li>
           <li>
             <img src="./images/photo-1.jpg" alt="Ольга Репина" width="270" />
             <h3 class="name">Ольга Репина</h3>
-            <p>
+            <p class="position">
               Frontend Developer
             </p>
           </li>
           <li>
             <img src="./images/photo-2.jpg" alt="Николай Тарасов" width="270" />
             <h3 class="name">Николай Тарасов</h3>
-            <p>
+            <p class="position">
               Marketing
             </p>
           </li>
           <li>
             <img src="./images/photo-3.jpg" alt="Михаил Ермаков" width="270" />
             <h3 class="name">Михаил Ермаков</h3>
-            <p>
+            <p class="position">
               UI Designer
             </p>
           </li>
@@ -122,6 +130,7 @@
     </main>
     <!-- Футер -->
     <footer class="foot">
+      <div class="container">
       <a class="logo-foot" href="./index.html">
         Web<span class="logo-foot-half">Studio</span>
       </a>
@@ -131,6 +140,7 @@
         <li><a class="foot-li" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
       </address> 
+    </div>
     </footer>
   </body>
 </html>
