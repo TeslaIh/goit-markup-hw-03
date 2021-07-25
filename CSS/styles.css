@@ -37,12 +37,16 @@ ul {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
 }
 
 /* logo header styles */
@@ -94,7 +98,6 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -127,23 +130,32 @@ ul {
 }
 
 /*main*/
-.section-title-hide {
-  display: none;
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .hero {
-  padding: 200px 252px;
-  height: 600px;
+  padding: 200px 0;
   text-align: center;
   background-color: var(--background-color);
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin: 0 auto;
   color: var(--secondary-text-color);
   font-size: 44px;
-  min-width: 696px;
+  width: 696px;
+  justify-content: center;
   line-height: 1.36;
   font-weight: 900;
   text-transform: uppercase;
@@ -155,6 +167,7 @@ ul {
 }
 
 .button {
+  margin-top: 30px;
   min-width: 200px;
   padding: 10px 32px;
   text-align: center;
@@ -362,9 +375,9 @@ ul {
 .projects-border {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
-  border: 1px solid #eeeeee;
+  width: calc((100% - 3 * 30px) /3);
   box-sizing: border-box;
+  border: 1px solid #EEEEEE;
 }
 
 .projects-border:nth-child(3n) {
@@ -376,11 +389,10 @@ ul {
 }
 
 .projects-link {
-  margin-bottom: 20px;
+  height: 100%;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
-  text-decoration: none;
 }
 
 .projects-title-color {
@@ -395,4 +407,5 @@ ul {
 .projects-disc {
   padding: 0 24px;
   margin-bottom: 20px;
+  width: 370px;
 }
