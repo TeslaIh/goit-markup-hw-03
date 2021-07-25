@@ -375,7 +375,7 @@ img {
 .projects-border {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 3 * 30px) /3);
+  width: calc((100% - 2 * 30px) /3);
   box-sizing: border-box;
   border: 1px solid #EEEEEE;
 }
