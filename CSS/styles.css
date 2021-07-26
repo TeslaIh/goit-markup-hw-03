@@ -33,7 +33,7 @@ ul {
   list-style: none;
 }
 
-.link {
+link {
   text-decoration: none;
 }
 
@@ -159,6 +159,7 @@ img {
   line-height: 1.36;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .button:hover,
