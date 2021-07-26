@@ -42,11 +42,12 @@ a {
 }
 img {
   display: block;
+  width: 100%;
 }
 .container {
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  width: 1200px;
 }
 
 /* logo header styles */
@@ -137,7 +138,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -151,10 +152,10 @@ img {
 }
 
 .hero-title {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   color: var(--secondary-text-color);
   font-size: 44px;
-  width: 696px;
+  max-width: 696px;
   justify-content: center;
   line-height: 1.36;
   font-weight: 900;
@@ -168,8 +169,6 @@ img {
 }
 
 .button {
-  margin-top: 30px;
-  min-width: 200px;
   padding: 10px 32px;
   text-align: center;
   font-size: 16px;
@@ -191,10 +190,12 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
-.features .item + .item {
+.features .item {
   margin-left: 30px;
+  width: 270px;
 }
 
 .title {
@@ -204,6 +205,7 @@ img {
   line-height: 1.71;
   text-transform: uppercase;
   font-weight: 700;
+  width: 270px;
 }
 /* Gallery */
 
@@ -259,10 +261,14 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+}
+
+.member-box {
+  padding: 30px 20px;
 }
 
 .name {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--tittle-text-color);
   font-size: 16px;
@@ -271,7 +277,7 @@ img {
 }
 
 .team-disc {
-  margin-bottom: 30px;
+  margin: 0px;
 }
 
 /* footer */
@@ -376,9 +382,9 @@ img {
 .projects-border {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 2 * 30px) /3);
+  width: calc((100% - 2 * 30px) / 3);
   box-sizing: border-box;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .projects-border:nth-child(3n) {
