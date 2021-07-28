@@ -237,12 +237,11 @@ img {
 
 .descr-team {
   background-color: var(--unique-background-color);
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   font-weight: 700;
